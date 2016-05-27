@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+    <!-- 需要向多个库执行sql用到的线程池 -->
+	<threadpool id="default" size="15" />
+	
+	<datanode id="db1">
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.221:3306/ins_tc_prd1?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+		<username>zengwh</username>
+		<password>Zengwenhao2015</password>
+		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+		<initialSize>50</initialSize> <!-- 池启动时创建的连接数量 -->
+		<maxActive>150</maxActive> <!--同一时间可以从池分配的最多连接数量。设置为0时表示无限制-->
+		<maxWait>30000</maxWait> <!-- 超时等待时间  以毫秒为单位 --> 
+		<maxIdle>20</maxIdle><!--池里不会被释放的最多空闲连接数量。设置为0时表示无限制。-->
+		<minIdle>5</minIdle><!-- 最小空闲连接 -->
+		<removeAbandoned>true</removeAbandoned><!-- 是否自动回收超时连接 --> 
+		<removeAbandonedTimeout>30</removeAbandonedTimeout> <!-- 超时时间(以秒数为单位) --> 
+		<testWhileIdle>true</testWhileIdle>   <!-- 打开检查,用异步线程evict进行检查 -->  
+		<testOnBorrow>true</testOnBorrow> <!--取得对象时是否进行验证，检查对象是否有效，默认为false   -->
+		<testOnReturn>false</testOnReturn><!-- 返回对象时是否进行验证，检查对象是否有效，默认为false  -->
+		<validationQuery>select 1</validationQuery>
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+	</datanode>
+	
+	
+
+	
+	<datanode id="db12" parent="db1">
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.229:3306/ins_tc_prd1?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+	</datanode>
+	
+	
+	<datanode id="db2" >
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.221:3306/ins_tc_prd2?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+		<username>zengwh</username>
+		<password>Zengwenhao2015</password>
+		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+		<initialSize>50</initialSize> <!-- 池启动时创建的连接数量 -->
+		<maxActive>150</maxActive> <!--同一时间可以从池分配的最多连接数量。设置为0时表示无限制-->
+		<maxWait>30000</maxWait> <!-- 超时等待时间  以毫秒为单位 --> 
+		<maxIdle>20</maxIdle><!--池里不会被释放的最多空闲连接数量。设置为0时表示无限制。-->
+		<minIdle>5</minIdle><!-- 最小空闲连接 -->
+		<removeAbandoned>true</removeAbandoned><!-- 是否自动回收超时连接 --> 
+		<removeAbandonedTimeout>30</removeAbandonedTimeout> <!-- 超时时间(以秒数为单位) --> 
+		<testWhileIdle>true</testWhileIdle>   <!-- 打开检查,用异步线程evict进行检查 -->  
+		<testOnBorrow>true</testOnBorrow> <!--取得对象时是否进行验证，检查对象是否有效，默认为false   -->
+		<testOnReturn>false</testOnReturn><!-- 返回对象时是否进行验证，检查对象是否有效，默认为false  -->
+		<validationQuery>select 1</validationQuery>
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+	</datanode>
+	
+	
+	<datanode id="db22" parent="db2">
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.229:3306/ins_tc_prd2?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+	</datanode>
+	
+	<datanode id="db3" >
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.221:3306/ins_tc_prd3?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+		<username>zengwh</username>
+		<password>Zengwenhao2015</password>
+		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+		<initialSize>50</initialSize> <!-- 池启动时创建的连接数量 -->
+		<maxActive>150</maxActive> <!--同一时间可以从池分配的最多连接数量。设置为0时表示无限制-->
+		<maxWait>30000</maxWait> <!-- 超时等待时间  以毫秒为单位 --> 
+		<maxIdle>20</maxIdle><!--池里不会被释放的最多空闲连接数量。设置为0时表示无限制。-->
+		<minIdle>5</minIdle><!-- 最小空闲连接 -->
+		<removeAbandoned>true</removeAbandoned><!-- 是否自动回收超时连接 --> 
+		<removeAbandonedTimeout>30</removeAbandonedTimeout> <!-- 超时时间(以秒数为单位) --> 
+		<testWhileIdle>true</testWhileIdle>   <!-- 打开检查,用异步线程evict进行检查 -->  
+		<testOnBorrow>true</testOnBorrow> <!--取得对象时是否进行验证，检查对象是否有效，默认为false   -->
+		<testOnReturn>false</testOnReturn><!-- 返回对象时是否进行验证，检查对象是否有效，默认为false  -->
+		<validationQuery>select 1</validationQuery>
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+	</datanode>
+	
+	
+	
+	<datanode id="db32" parent="db3">
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.229:3306/ins_tc_prd3?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+	</datanode>
+	
+
+	
+	<datanode id="db4" >
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.221:3306/ins_tc_prd4?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+		<username>zengwh</username>
+		<password>Zengwenhao2015</password>
+		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+		<initialSize>50</initialSize> 池启动时创建的连接数量
+		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
+		<maxWait>30000</maxWait> 超时等待时间  以毫秒为单位 
+		<maxIdle>20</maxIdle>池里不会被释放的最多空闲连接数量。设置为0时表示无限制。
+		<minIdle>5</minIdle>最小空闲连接
+		<removeAbandoned>true</removeAbandoned>是否自动回收超时连接 
+		<removeAbandonedTimeout>30</removeAbandonedTimeout> 超时时间(以秒数为单位) 
+		<testWhileIdle>true</testWhileIdle>   打开检查,用异步线程evict进行检查  
+		<testOnBorrow>true</testOnBorrow> 取得对象时是否进行验证，检查对象是否有效，默认为false  
+		<testOnReturn>false</testOnReturn>返回对象时是否进行验证，检查对象是否有效，默认为false 
+		<validationQuery>select 1</validationQuery>
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+	</datanode>
+	
+	
+	<datanode id="db42" parent="db4">
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.229:3306/ins_tc_prd4?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+	</datanode>
+	
+	
+	
+	
+	<datanode id="db5" >
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.221:3306/ins_tc_prd5?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+		<username>zengwh</username>
+		<password>Zengwenhao2015</password>
+		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+		<initialSize>50</initialSize> 池启动时创建的连接数量
+		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
+		<maxWait>30000</maxWait> 超时等待时间  以毫秒为单位 
+		<maxIdle>20</maxIdle>池里不会被释放的最多空闲连接数量。设置为0时表示无限制。
+		<minIdle>5</minIdle>最小空闲连接
+		<removeAbandoned>true</removeAbandoned>是否自动回收超时连接 
+		<removeAbandonedTimeout>30</removeAbandonedTimeout> 超时时间(以秒数为单位) 
+		<testWhileIdle>true</testWhileIdle>   打开检查,用异步线程evict进行检查  
+		<testOnBorrow>true</testOnBorrow> 取得对象时是否进行验证，检查对象是否有效，默认为false  
+		<testOnReturn>false</testOnReturn>返回对象时是否进行验证，检查对象是否有效，默认为false 
+		<validationQuery>select 1</validationQuery>
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+	</datanode>
+	
+	
+	<datanode id="db52" parent="db5">
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.229:3306/ins_tc_prd5?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+	</datanode>
+	
+
+	
+	<datanode id="db6" >
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.221:3306/ins_tc_prd6?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+		<username>zengwh</username>
+		<password>Zengwenhao2015</password>
+		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+		<initialSize>50</initialSize> 池启动时创建的连接数量
+		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
+		<maxWait>30000</maxWait> 超时等待时间  以毫秒为单位 
+		<maxIdle>20</maxIdle>池里不会被释放的最多空闲连接数量。设置为0时表示无限制。
+		<minIdle>5</minIdle>最小空闲连接
+		<removeAbandoned>true</removeAbandoned>是否自动回收超时连接 
+		<removeAbandonedTimeout>30</removeAbandonedTimeout> 超时时间(以秒数为单位) 
+		<testWhileIdle>true</testWhileIdle>   打开检查,用异步线程evict进行检查  
+		<testOnBorrow>true</testOnBorrow> 取得对象时是否进行验证，检查对象是否有效，默认为false  
+		<testOnReturn>false</testOnReturn>返回对象时是否进行验证，检查对象是否有效，默认为false 
+		<validationQuery>select 1</validationQuery>
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+	</datanode>
+	
+	
+	
+	<datanode id="db62" parent="db6">
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.229:3306/ins_tc_prd6?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+	</datanode>
+	
+	
+	
+	<datanode id="db7" >
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.221:3306/ins_tc_prd7?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+		<username>zengwh</username>
+		<password>Zengwenhao2015</password>
+		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+		<initialSize>50</initialSize> 池启动时创建的连接数量
+		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
+		<maxWait>30000</maxWait> 超时等待时间  以毫秒为单位 
+		<maxIdle>20</maxIdle>池里不会被释放的最多空闲连接数量。设置为0时表示无限制。
+		<minIdle>5</minIdle>最小空闲连接
+		<removeAbandoned>true</removeAbandoned>是否自动回收超时连接 
+		<removeAbandonedTimeout>30</removeAbandonedTimeout> 超时时间(以秒数为单位) 
+		<testWhileIdle>true</testWhileIdle>   打开检查,用异步线程evict进行检查  
+		<testOnBorrow>true</testOnBorrow> 取得对象时是否进行验证，检查对象是否有效，默认为false  
+		<testOnReturn>false</testOnReturn>返回对象时是否进行验证，检查对象是否有效，默认为false 
+		<validationQuery>select 1</validationQuery>
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+	</datanode>
+	
+	
+	
+	<datanode id="db72" parent="db7">
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.229:3306/ins_tc_prd7?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+	</datanode>
+	
+	
+	
+		<datanode id="db8" >
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.221:3306/ins_tc_prd8?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+		<username>zengwh</username>
+		<password>Zengwenhao2015</password>
+		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+		<initialSize>50</initialSize> 池启动时创建的连接数量
+		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
+		<maxWait>30000</maxWait> 超时等待时间  以毫秒为单位 
+		<maxIdle>20</maxIdle>池里不会被释放的最多空闲连接数量。设置为0时表示无限制。
+		<minIdle>5</minIdle>最小空闲连接
+		<removeAbandoned>true</removeAbandoned>是否自动回收超时连接 
+		<removeAbandonedTimeout>30</removeAbandonedTimeout> 超时时间(以秒数为单位) 
+		<testWhileIdle>true</testWhileIdle>   打开检查,用异步线程evict进行检查  
+		<testOnBorrow>true</testOnBorrow> 取得对象时是否进行验证，检查对象是否有效，默认为false  
+		<testOnReturn>false</testOnReturn>返回对象时是否进行验证，检查对象是否有效，默认为false 
+		<validationQuery>select 1</validationQuery>
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+	</datanode>
+	
+	
+	<datanode id="db82" parent="db8">
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.229:3306/ins_tc_prd8?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+	</datanode>
+	
+	
+	
+	<datanode id="db9" >
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.221:3306/ins_tc_prd9?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+		<username>zengwh</username>
+		<password>Zengwenhao2015</password>
+		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+		<initialSize>50</initialSize> 池启动时创建的连接数量
+		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
+		<maxWait>30000</maxWait> 超时等待时间  以毫秒为单位 
+		<maxIdle>20</maxIdle>池里不会被释放的最多空闲连接数量。设置为0时表示无限制。
+		<minIdle>5</minIdle>最小空闲连接
+		<removeAbandoned>true</removeAbandoned>是否自动回收超时连接 
+		<removeAbandonedTimeout>30</removeAbandonedTimeout> 超时时间(以秒数为单位) 
+		<testWhileIdle>true</testWhileIdle>   打开检查,用异步线程evict进行检查  
+		<testOnBorrow>true</testOnBorrow> 取得对象时是否进行验证，检查对象是否有效，默认为false  
+		<testOnReturn>false</testOnReturn>返回对象时是否进行验证，检查对象是否有效，默认为false 
+		<validationQuery>select 1</validationQuery>
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+	</datanode>
+	
+	
+	
+	<datanode id="db92" parent="db9">
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.229:3306/ins_tc_prd9?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+	</datanode>
+	
+	
+	
+	<datanode id="db10" >
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.221:3306/ins_tc_prd10?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+		<username>zengwh</username>
+		<password>Zengwenhao2015</password>
+		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+		<initialSize>50</initialSize> 池启动时创建的连接数量
+		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
+		<maxWait>30000</maxWait> 超时等待时间  以毫秒为单位 
+		<maxIdle>20</maxIdle>池里不会被释放的最多空闲连接数量。设置为0时表示无限制。
+		<minIdle>5</minIdle>最小空闲连接
+		<removeAbandoned>true</removeAbandoned>是否自动回收超时连接 
+		<removeAbandonedTimeout>30</removeAbandonedTimeout> 超时时间(以秒数为单位) 
+		<testWhileIdle>true</testWhileIdle>   打开检查,用异步线程evict进行检查  
+		<testOnBorrow>true</testOnBorrow> 取得对象时是否进行验证，检查对象是否有效，默认为false  
+		<testOnReturn>false</testOnReturn>返回对象时是否进行验证，检查对象是否有效，默认为false 
+		<validationQuery>select 1</validationQuery>
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+	</datanode>
+	
+	
+	
+	<datanode id="db102" parent="db10">
+		<url>
+		<![CDATA[
+		jdbc:mysql://10.16.67.229:3306/ins_tc_prd10?autoReconnect=true&characterEncoding=UTF8
+		]]>
+		</url>
+	</datanode>
+	
+	
+	
+	
+	<namenode id="ndb1" loadbalance="RANDOM_WEIGHT">
+		<datanodes>
+			<datanode ref="db1" access-mode="WRITEONLY" weight="10" />
+			<datanode ref="db12" access-mode="READONLY" weight="10" />
+		</datanodes>
+	</namenode>
+	
+	
+	
+	<namenode id="ndb2" loadbalance="RANDOM_WEIGHT">
+		<datanodes>
+			<datanode ref="db2" access-mode="WRITEONLY" weight="10" />
+			<datanode ref="db22" access-mode="READONLY" weight="10" />
+		</datanodes>
+	</namenode>
+	
+	<namenode id="ndb3" loadbalance="RANDOM_WEIGHT">
+		<datanodes>
+			<datanode ref="db3" access-mode="WRITEONLY" weight="10" />
+			<datanode ref="db32" access-mode="READONLY" weight="10" />
+		</datanodes>
+	</namenode>
+
+	<namenode id="ndb4" loadbalance="RANDOM_WEIGHT">
+		<datanodes>
+			<datanode ref="db4" access-mode="WRITEONLY" weight="10" />
+			<datanode ref="db42" access-mode="READONLY" weight="10" />
+		</datanodes>
+	</namenode>
+	
+	
+	<namenode id="ndb5" loadbalance="RANDOM_WEIGHT">
+		<datanodes>
+			<datanode ref="db5" access-mode="WRITEONLY" weight="10" />
+			<datanode ref="db52" access-mode="READONLY" weight="10" />
+		</datanodes>
+	</namenode>
+	
+	
+	<namenode id="ndb6" loadbalance="RANDOM_WEIGHT">
+		<datanodes>
+			<datanode ref="db6" access-mode="WRITEONLY" weight="10" />
+			<datanode ref="db62" access-mode="READONLY" weight="10" />
+		</datanodes>
+	</namenode>
+	
+	<namenode id="ndb7" loadbalance="RANDOM_WEIGHT">
+		<datanodes>
+			<datanode ref="db7" access-mode="WRITEONLY" weight="10" />
+			<datanode ref="db72" access-mode="READONLY" weight="10" />
+		</datanodes>
+	</namenode>
+	
+	<namenode id="ndb8" loadbalance="RANDOM_WEIGHT">
+		<datanodes>
+			<datanode ref="db8" access-mode="WRITEONLY" weight="10" />
+			<datanode ref="db82" access-mode="READONLY" weight="10" />
+		</datanodes>
+	</namenode>
+	
+	<namenode id="ndb9" loadbalance="">
+		<datanodes>
+			<datanode ref="db9" access-mode="WRITEONLY" weight="10" />
+			<datanode ref="db92" access-mode="READONLY" weight="10" />
+		</datanodes>
+	</namenode>
+	
+	<namenode id="ndb10" loadbalance="">
+		<datanodes>
+			<datanode ref="db10" access-mode="WRITEONLY" weight="10" />
+			<datanode ref="db102" access-mode="READONLY" weight="10" />
+		</datanodes>
+	</namenode>  
+
+
+
+
+	<bean id="userShardFunc" class="com.midea.trade.sharding.core.shard.ModFunction" />
+	
+	
+	<table name="t_order_main" differ-name="false" shard-type="BY_DATABASE_TABLE" threadpool="default">
+		<columns>
+			<column name="order_id" />
+		</columns>
+		<namenodes>
+			<namenode ref="ndb1" tablename="t_order_main" />
+			<namenode ref="ndb2" tablename="t_order_main" />
+			<namenode ref="ndb3" tablename="t_order_main" />
+			<namenode ref="ndb4" tablename="t_order_main" />
+			<namenode ref="ndb5" tablename="t_order_main" />
+			 <namenode ref="ndb6" tablename="t_order_main" />
+			<namenode ref="ndb7" tablename="t_order_main" />
+			<namenode ref="ndb8" tablename="t_order_main" />
+		 	<namenode ref="ndb9" tablename="t_order_main" />
+			<namenode ref="ndb10" tablename="t_order_main" />  
+		</namenodes>
+		<function ref="userShardFunc" />
+	</table>
+</configurations>

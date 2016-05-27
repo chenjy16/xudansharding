@@ -1,0 +1,17 @@
+<configurations>
+
+	<namenode id="user_source1" loadbalance="">
+		<datanodes>
+			<datanode ref="user_db1" access-mode="READ-WRITE" weight="10" />
+		</datanodes>
+	</namenode>
+ 
+	<namenode id="user_source2" loadbalance="">
+		<datanodes>
+			<datanode ref="user_db2" access-mode="READ-WRITE" weight="10" />
+		</datanodes>
+	</namenode>
+ 
+
+ 
+</configurations>
