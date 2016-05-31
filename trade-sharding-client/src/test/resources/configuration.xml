@@ -6,11 +6,11 @@
 	<datanode id="db1">
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.221:3306/ins_tc_prd1?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/2?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
-		<username>zengwh</username>
-		<password>Zengwenhao2015</password>
+		<username>ww</username>
+		<password>ww</password>
 		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
 		<initialSize>50</initialSize> <!-- 池启动时创建的连接数量 -->
 		<maxActive>150</maxActive> <!--同一时间可以从池分配的最多连接数量。设置为0时表示无限制-->
@@ -32,7 +32,7 @@
 	<datanode id="db12" parent="db1">
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.229:3306/ins_tc_prd1?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins_?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
 	</datanode>
@@ -41,11 +41,11 @@
 	<datanode id="db2" >
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.221:3306/ins_tc_prd2?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins_?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
-		<username>zengwh</username>
-		<password>Zengwenhao2015</password>
+		<username>w</username>
+		<password>w</password>
 		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
 		<initialSize>50</initialSize> <!-- 池启动时创建的连接数量 -->
 		<maxActive>150</maxActive> <!--同一时间可以从池分配的最多连接数量。设置为0时表示无限制-->
@@ -65,7 +65,7 @@
 	<datanode id="db22" parent="db2">
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.229:3306/ins_tc_prd2?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins_?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
 	</datanode>
@@ -73,11 +73,11 @@
 	<datanode id="db3" >
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.221:3306/ins_tc_prd3?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins_?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
-		<username>zengwh</username>
-		<password>Zengwenhao2015</password>
+		<username>w</username>
+		<password>w</password>
 		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
 		<initialSize>50</initialSize> <!-- 池启动时创建的连接数量 -->
 		<maxActive>150</maxActive> <!--同一时间可以从池分配的最多连接数量。设置为0时表示无限制-->
@@ -98,7 +98,7 @@
 	<datanode id="db32" parent="db3">
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.229:3306/ins_tc_prd3?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
 	</datanode>
@@ -108,11 +108,11 @@
 	<datanode id="db4" >
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.221:3306/ins_tc_prd4?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
-		<username>zengwh</username>
-		<password>Zengwenhao2015</password>
+		<username>w</username>
+		<password>e</password>
 		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
 		<initialSize>50</initialSize> 池启动时创建的连接数量
 		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
@@ -132,7 +132,7 @@
 	<datanode id="db42" parent="db4">
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.229:3306/ins_tc_prd4?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
 	</datanode>
@@ -143,11 +143,11 @@
 	<datanode id="db5" >
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.221:3306/ins_tc_prd5?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
-		<username>zengwh</username>
-		<password>Zengwenhao2015</password>
+		<username>e</username>
+		<password>e</password>
 		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
 		<initialSize>50</initialSize> 池启动时创建的连接数量
 		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
@@ -167,7 +167,7 @@
 	<datanode id="db52" parent="db5">
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.229:3306/ins_tc_prd5?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins_?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
 	</datanode>
@@ -177,11 +177,11 @@
 	<datanode id="db6" >
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.221:3306/ins_tc_prd6?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins_tc_p?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
-		<username>zengwh</username>
-		<password>Zengwenhao2015</password>
+		<username>e</username>
+		<password>e</password>
 		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
 		<initialSize>50</initialSize> 池启动时创建的连接数量
 		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
@@ -202,7 +202,7 @@
 	<datanode id="db62" parent="db6">
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.229:3306/ins_tc_prd6?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins_tc?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
 	</datanode>
@@ -212,11 +212,11 @@
 	<datanode id="db7" >
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.221:3306/ins_tc_prd7?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins_tc?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
-		<username>zengwh</username>
-		<password>Zengwenhao2015</password>
+		<username>e</username>
+		<password>e</password>
 		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
 		<initialSize>50</initialSize> 池启动时创建的连接数量
 		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
@@ -237,7 +237,7 @@
 	<datanode id="db72" parent="db7">
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.229:3306/ins_tc_prd7?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
 	</datanode>
@@ -247,11 +247,11 @@
 		<datanode id="db8" >
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.221:3306/ins_tc_prd8?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
-		<username>zengwh</username>
-		<password>Zengwenhao2015</password>
+		<username>e</username>
+		<password>e</password>
 		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
 		<initialSize>50</initialSize> 池启动时创建的连接数量
 		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
@@ -271,7 +271,7 @@
 	<datanode id="db82" parent="db8">
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.229:3306/ins_tc_prd8?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins_tc_?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
 	</datanode>
@@ -281,11 +281,11 @@
 	<datanode id="db9" >
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.221:3306/ins_tc_prd9?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins_tc?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
-		<username>zengwh</username>
-		<password>Zengwenhao2015</password>
+		<username>e</username>
+		<password>e</password>
 		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
 		<initialSize>50</initialSize> 池启动时创建的连接数量
 		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
@@ -306,7 +306,7 @@
 	<datanode id="db92" parent="db9">
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.229:3306/ins_tc_prd9?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins_?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
 	</datanode>
@@ -316,11 +316,11 @@
 	<datanode id="db10" >
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.221:3306/ins_tc_prd10?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
-		<username>zengwh</username>
-		<password>Zengwenhao2015</password>
+		<username>e</username>
+		<password>e</password>
 		<driverClassName>com.mysql.jdbc.Driver</driverClassName>
 		<initialSize>50</initialSize> 池启动时创建的连接数量
 		<maxActive>150</maxActive> 同一时间可以从池分配的最多连接数量。设置为0时表示无限制
@@ -341,7 +341,7 @@
 	<datanode id="db102" parent="db10">
 		<url>
 		<![CDATA[
-		jdbc:mysql://10.16.67.229:3306/ins_tc_prd10?autoReconnect=true&characterEncoding=UTF8
+		jdbc:mysql://10.16.67.2:3306/ins?autoReconnect=true&characterEncoding=UTF8
 		]]>
 		</url>
 	</datanode>
@@ -434,16 +434,16 @@
 			<column name="order_id" />
 		</columns>
 		<namenodes>
-			<namenode ref="ndb1" tablename="t_order_main" />
-			<namenode ref="ndb2" tablename="t_order_main" />
-			<namenode ref="ndb3" tablename="t_order_main" />
-			<namenode ref="ndb4" tablename="t_order_main" />
-			<namenode ref="ndb5" tablename="t_order_main" />
-			 <namenode ref="ndb6" tablename="t_order_main" />
-			<namenode ref="ndb7" tablename="t_order_main" />
-			<namenode ref="ndb8" tablename="t_order_main" />
-		 	<namenode ref="ndb9" tablename="t_order_main" />
-			<namenode ref="ndb10" tablename="t_order_main" />  
+			<namenode ref="ndb1" tablename="order_main" />
+			<namenode ref="ndb2" tablename="order_main" />
+			<namenode ref="ndb3" tablename="order_main" />
+			<namenode ref="ndb4" tablename="order_main" />
+			<namenode ref="ndb5" tablename="order_main" />
+			 <namenode ref="ndb6" tablename="order_main" />
+			<namenode ref="ndb7" tablename="order_main" />
+			<namenode ref="ndb8" tablename="order_main" />
+		 	<namenode ref="ndb9" tablename="order_main" />
+			<namenode ref="ndb10" tablename="order_main" />  
 		</namenodes>
 		<function ref="userShardFunc" />
 	</table>
